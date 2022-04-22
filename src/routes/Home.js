@@ -18,7 +18,7 @@ export default function Home(props) {
   };
   useEffect(() => {
     getMovies();
-  }, [props._dishType]);
+  }, [setMovies]);
   return (
     <>
     <div className={style.logo}>
