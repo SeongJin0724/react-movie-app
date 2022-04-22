@@ -62,6 +62,9 @@ export default function Detail() {
                   ))}
                 </div>
                 <div className={style.description}>{movie.description_full}</div>
+                <div>
+                <iframe className={style.traiiler} src={`https://www.youtube.com/embed/${movie.yt_trailer_code}?mute=1&&autoplay=1`}></iframe>
+                </div>
               </div>
             </div>
           }
