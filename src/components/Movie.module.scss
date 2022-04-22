@@ -1,0 +1,42 @@
+@import '../reset.css';
+
+.container {
+  width: 30%;
+  height: auto;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: initial;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3%;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.637);
+  margin: 50px 0 50px 0;
+  padding: 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.4s;
+  }
+  .poster {
+    margin-bottom: 20px;
+  }
+  .title {
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    &:hover {
+      color: #6abf45be;
+      transition: all 0.4s;
+    }
+  }
+  .time {
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  .genres {
+    margin-top: 20px;
+    color: white;
+    font-weight: 300;
+  }
+}

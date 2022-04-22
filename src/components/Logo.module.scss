@@ -1,0 +1,10 @@
+@import '../reset.css';
+$color:#121211;
+.bg {
+  width: 10%;
+  margin: 0 auto;
+  .bg_img {
+    display: block;
+    width: 100%;
+  }
+}

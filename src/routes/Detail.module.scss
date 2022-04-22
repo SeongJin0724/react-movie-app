@@ -1,0 +1,51 @@
+@import '../reset.css';
+$color:#121211;
+$uppercase:uppercase;
+.logo {
+  background-color: $color;
+}
+.container {
+  height: 100vh;
+  background-color: $color;
+  .loading {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+  }
+  .container_box {
+    width: 60%;
+    display: flex;
+    justify-content:space-around;
+    margin: 0 auto;
+    .text_box {
+      width: 40%;
+      padding: 20px;
+      color: rgba(245, 245, 245, 0.911);
+      .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .movie_time {
+        margin-bottom: 7px;
+      }
+      .rating {
+        margin-bottom: 7px;
+        text-transform: $uppercase;
+      }
+      .download {
+        margin-bottom: 7px;
+        text-transform: $uppercase;
+      }
+      .like {
+        margin-bottom: 7px;
+        text-transform: $uppercase;
+      }
+      .genres {
+        margin-bottom: 7px;
+      }
+      .description {
+        line-height: 1.4;
+      }
+    }
+  }
+}

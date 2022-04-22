@@ -1,0 +1,23 @@
+@import '../reset.css';
+$color:#121211;
+
+.logo {
+  background-color: $color;
+}
+.container {
+  background-color: $color;
+  display: flex;
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .loading {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+  }
+}
