@@ -15,10 +15,10 @@ export default function Home() {
     ).json();
     setMovies(json.data.movies);
     setLoading(false);
-  });
+  },[]);
   useEffect(() => {
-    getMovies();
-  }, [setMovies]);
+    getMovies()
+  }, [getMovies]);
   return (
     <>
     <div className={style.logo}>
