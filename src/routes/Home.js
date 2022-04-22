@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useCallback,useEffect, useState } from "react";
 import Movie from "../components/Movie";
 import style from './Home.module.scss';
 import Logo from '../components/Logo';
 
-export default function Home(props) {
+export default function Home() {
   const rating = (Math.random() * (10 - 7.5) ) + 7.5;
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
-  const getMovies = async () => {
+  const getMovies = useCallback(async () => {
     const json = await (
       await fetch(
         `https://yts.mx/api/v2/list_movies.json?minimum_rating=${rating}&sort_by=year`
@@ -15,7 +15,7 @@ export default function Home(props) {
     ).json();
     setMovies(json.data.movies);
     setLoading(false);
-  };
+  });
   useEffect(() => {
     getMovies();
   }, [setMovies]);
