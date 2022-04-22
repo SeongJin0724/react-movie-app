@@ -6,7 +6,7 @@ export default function Logo() {
   return(
     <h1 className={style.bg}>
       <Link to={`/`}>
-        <img className={style.bg_img} src={bg}/>
+        <img className={style.bg_img} src={bg} alt="YTS"/>
       </Link>
     </h1>
   )

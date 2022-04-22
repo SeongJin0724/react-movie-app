@@ -3,7 +3,7 @@ import Movie from "../components/Movie";
 import style from './Home.module.scss';
 import Logo from '../components/Logo';
 
-export default function Home() {
+export default function Home(props) {
   const rating = (Math.random() * (10 - 7.5) ) + 7.5;
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
@@ -18,7 +18,7 @@ export default function Home() {
   };
   useEffect(() => {
     getMovies();
-  }, []);
+  }, [props._dishType]);
   return (
     <>
     <div className={style.logo}>
